@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> partial-compiled/head.html}}
+  <script src="js/templates.js"></script>
+  <title>LASACTF - Scoreboard</title>
+</head>
+
+<!-- Redirect user to appropriate default scoreboard -->
+
+<script>
+	$.ajax({
+		url: '/api/team',
+		type: 'GET',
+		success: function(result) {
+			if(result.status == 1 && !result.data.eligible) {
+				// Redirect to unranked only if team registered as unranked
+				window.location.href = '/unranked';
+			} else {
+				window.location.href='/ranked';
+			}
+		},
+		error: function(result) {
+			// Redirect to ranked by default
+			window.location.href = '/ranked';
+		}
+	});
+</script>
+</html>

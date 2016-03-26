@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> partial-compiled/head.html}}
+  <title>LASACTF</title>
+  <!-- JS -->
+  <script src="js/index.js" async></script>
+</head>
+
+<body>
+
+  <body class="compete">
+      {{> partial/header.html}}
+      <div class="content index">
+
+        <div class="frame purple" style="text-align: center; padding-bottom: 32px;">
+          <div class="row" style="clear: both;">
+            <img src="img/LASA-CTF-Logo-v3-3x-trans-white.png" class="logo">
+          </div>
+          <div class="row">
+            <h2><div class="h2 text" id="itdays">00</div><span class="sm-invisible"> days and </span><span class="hidden sm-visible-inline">:</span><div class="h2 text" id="ithours">00</div>:<div class="h2 text" id="itmins">00</div>:<div class="h2 text" id="itsecs">00</div><br class="hidden sm-visible-block"> <text id="ittext">until start</text></h2>
+          </div>
+        </div>
+        <div class="frame purple" style="text-align: center; padding-bottom:32px; padding-top:12px">
+          <h1>A National Computer Security<br>"Capture-The-Flag" Competition</h1>
+          <h2>By high schoolers for high schoolers</h2>
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <br>
+              <h2>March 19-26, 2016</h2>
+
+              <a class="btn white md wide" href="/register" role="button"><i class="material-icons">&#xE254;</i>REGISTER</a><br><a class="btn white md wide" href="/login" role="button"><i class="material-icons">&#xE0DA;</i>LOGIN</a>
+            </div>
+          </div>
+        </div>
+        <div class="frame gray" style="text-align: left; padding-bottom:52px; padding-top:32px">
+          <div class="row contentform">
+            <h3>LASACTF is an online computer science and security competition run by students from the Liberal Arts and Science Academy in Austin, TX. Competitors will exploit, decrypt, reverse engineer, and hack their way through a diverse set of challenges, gaining valuable experience along the way. <a style="color: black" href="/about">Find out more</a></h3>
+          </div>
+        </div>
+        <div class="frame image" style="padding-bottom:72px; padding-top:52px">
+          <div class="row contentform" style="text-align: right; color: white">
+            <h1>Nearly $2000 in prizes</h1>
+            <h3>Nexus 9 Tablet</h3>
+            <h3>Intel Dev Boards<h3>
+            <h3>Silicon Labs Wonder Gecko Kits</h3>
+            <h3>GitHub Stickers</h3>
+            <h3>Lots of other swag!</h3>
+            <br>
+            <br>
+            <a class="btn purple md wide" href="/about#prizes" role="button"><i class="material-icons">&#xE838;</i>PRIZE INFO</a><br>
+            <a class="btn white wide sm" href="http://eepurl.com/bMBMK1" role="button"><i class="material-icons">&#xE866;</i>SUBSCRIBE TO UPDATES</a>
+          </div>
+        </div>
+        <div class="frame white" style="text-align: center; padding-bottom:52px; padding-top:32px">
+          <div class="row contentform" style="text-align: center;">
+            <h1>SPONSORS</h1>
+            <h3>We thank our sponsors for prize and monetary contributions that make LASACTF such a success!</h3>
+            <br>
+
+            <div class="row" style="text-align: center">
+              <div class="col-md-4">
+                <img src="img/sponsor-google.png" class="sponsor">
+              </div>
+              <div class="col-md-4">
+                <img src="img/sponsor-silabs.jpg" class="sponsor">
+              </div>
+              <div class="col-md-4">
+                <img src="img/sponsor-github.png" class="sponsor">
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
+                <img src="img/sponsor-intel.png" class="sponsor">
+              </div>
+              <div class="col-md-4"></div>
+            </div>
+            <h2>Looking to sponsor? We'd love to talk. Shoot us an <a style="color:black" href="mailto:team@lasactf.com">email!</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{> partial/footer.html}}
+
+  </body>
+
+</html>
